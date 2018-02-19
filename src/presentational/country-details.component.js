@@ -1,7 +1,8 @@
 import React from 'react';
+import style from '../country.css'
 
 const CountryDetails = (props) => (
-    <div className="country-wrapper">
+    <div className="country-wrapper style">
         <header>
             <img className="country-photo" src={props.country.imageUrl} alt="country" />
         </header>
