@@ -2,11 +2,11 @@ import React from 'react';
 import '../country.css';
 
 const CountryDetails = (props) => (
-    <div className="country-wrapper country">
+    <div className="country-wrapper">
         <header>
             <img className="country-photo" src={props.country.imageUrl} alt="country" />
         </header>
-        <div className="country-info">
+        <div className="country-info country">
             <h1>{props.country.name}</h1>
             <h2>Kontynent: {props.country.continent}</h2>
 
