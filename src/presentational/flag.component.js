@@ -1,8 +1,8 @@
 import React from 'react';
-import style from '../country.css';
+import '../country.css';
 
 const CountryFlag = (props) => (
-	<div className="country-logo-wrapper style">
+	<div className="country-logo-wrapper country">
 		<img className="country-logo" src={props.country.imageUrl} alt="country logo" />
 	</div>
 );

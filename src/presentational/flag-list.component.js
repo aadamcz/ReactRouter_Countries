@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import CountryFlag from '../presentational/flag.component';
-import style from '../country.css'
+import '../country.css';
 
 const CountryFlagList = (props) => (
-    <div className="countries-list style">
+    <div className="countries-list country">
         {props.countries.map(country => {
             return (
                 <div className="single-country" key={country.id}>
