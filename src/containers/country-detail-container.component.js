@@ -16,9 +16,9 @@ class CountryDetailsContainer extends Component {
 	}
 }
 
-const mapStateToProps = function (store) {
+const mapStateToProps = function (state) {
 	return {
-		selectedCountry: store.countriesReducer.selectedCountry
+		selectedCountry: state.selectedCountry
 	};
 };
 

@@ -10,7 +10,7 @@ const initialState = {
 const countriesReducer = function(state = initialState, action) {
 	switch (action.type) {
 		case GET_COUNTRIES:
-			return Object.assign({}, state, { countries: state.countries });
+			return Object.assign({}, state, { visibleCountries: state.countries });
 		case GET_COUNTRY:
 			const selectedCountry=state.countries.find(country => country.id===parseInt(action.id, 10));
 			return Object.assign({}, state, {selectedCountry});
