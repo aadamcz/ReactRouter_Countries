@@ -30,9 +30,9 @@ class ContinentsContainer extends Component {
     }
 }
 
-const mapStateToProps = function (store) {
+const mapStateToProps = function (state) {
     return {
-        visibleCountries: store.countriesReducer.visibleCountries
+        visibleCountries: state.visibleCountries
     };
 };
 
